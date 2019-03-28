@@ -2,7 +2,7 @@
 set -e
 ##################################################################################################################
 # Author 	: 	Marco Obaid
-# GitHub    :   https://github.com/abumasood
+# GitHub    :   https://github.com/marcoobaid
 ##################################################################################################################
 #
 #   Main Script to run post Arcolinux install to install/configure applications and settings
