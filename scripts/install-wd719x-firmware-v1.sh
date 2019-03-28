@@ -2,7 +2,7 @@
 set -e
 ##################################################################################################################
 # Author 	: 	Marco Obaid
-# GitHub    :   https://github.com/abumasood
+# GitHub    :   https://github.com/marcoobaid
 ##################################################################################################################
 #
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
