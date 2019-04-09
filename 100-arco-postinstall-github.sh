@@ -15,8 +15,8 @@ if [ ! -d "$HOME/DATA" ]; then
 	mkdir $HOME/DATA  
 fi
 cd $HOME/DATA
-git clone https://github.com/marcoobaid/myfiles
-git clone https://github.com/marcoobaid/mybackgrounds
+git clone https://github.com/marcoobaid/dotfiles
+git clone https://github.com/marcoobaid/artwork-wallpapers
 
 echo "################################################################"
 echo "####                Github Repos Cloned                   ######"

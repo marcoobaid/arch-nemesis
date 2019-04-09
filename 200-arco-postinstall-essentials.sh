@@ -18,8 +18,8 @@ echo "##### Installing hblock service #####"
 sh scripts/install-hblock-v*.sh
 echo "##### Installing Lightdm Webkit #####"
 sh scripts/install-lightdm-webkit-v*.sh
-echo "##### Installing Nvidia #####"
-sh scripts/install-nvidia-v*.sh
+#echo "##### Installing Nvidia #####"
+#sh scripts/install-nvidia-v*.sh
 echo "##### Installing Powerline #####"
 sh scripts/install-powerline-v*.sh
 echo "##### Configuring swapfile #####"

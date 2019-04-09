@@ -35,6 +35,8 @@ sudo pacman -S ufetch-arco-git --noconfirm --needed
 sudo pacman -S youtube-dl --noconfirm --needed
 sudo pacman -S gtop --noconfirm --needed
 sh scripts/install-vtop-v*.sh
+sh scripts/install-tty-clock-v*.sh
+sh scripts/install-curseradio-v*.sh
 sh scripts/install-nemo-v*.sh
 sh scripts/install-caffeine-ng-v*.sh
 sh scripts/install-polybar-v*.sh
@@ -49,10 +51,10 @@ sh scripts/install-virtualbox-host-v*.sh
 #sudo pacman -S virtualbox-guest-modules-arch --noconfirm --needed
 
 ### VMWare Workstation
-sh scripts/install-vmware-workstation-v*.sh
-sudo pacman -S open-vm-tools --noconfirm --needed
-sudo systemctl enable vmtoolsd
-sudo systemctl start vmtoolsd
+#sh scripts/install-vmware-workstation-v*.sh
+#sudo pacman -S open-vm-tools --noconfirm --needed
+#sudo systemctl enable vmtoolsd
+#sudo systemctl start vmtoolsd
 
 ### Chat and Social
 sudo pacman -S discord --noconfirm --needed
