@@ -50,6 +50,9 @@ sudo pacman -S linux-headers --noconfirm --needed
 sh scripts/install-virtualbox-host-v*.sh
 #sudo pacman -S virtualbox-guest-modules-arch --noconfirm --needed
 
+### QEMU/KVM
+sh scripts/install-qemu-v*.sh
+
 ### VMWare Workstation
 #sh scripts/install-vmware-workstation-v*.sh
 #sudo pacman -S open-vm-tools --noconfirm --needed
