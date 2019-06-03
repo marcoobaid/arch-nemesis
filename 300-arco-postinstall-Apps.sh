@@ -22,6 +22,8 @@ sudo pacman -S cowfortune --noconfirm --needed
 sudo pacman -S figlet --noconfirm --needed
 sudo pacman -S lolcat --noconfirm --needed
 sudo pacman -S boxes --noconfirm --needed
+sh scripts/install-edex-ui-v*.sh
+sh scripts/install-hack-font-v*.sh
 
 ### Graphics
 sudo pacman -S blender --noconfirm --needed
