@@ -10,6 +10,11 @@ set -e
 #
 ##################################################################################################################
 
+#remove conflicting dnsmasq
+if pacman -Qi dnsmasq &> /dev/null; then
+		sudo pacman -R dnsmasq --noconfirm 
+fi
+
 package="pi-hole-server"
 
 #----------------------------------------------------------------------------------
