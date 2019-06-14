@@ -102,9 +102,9 @@ sudo pihole -a -p
 
 ### Set-up PHP
 echo "Extensions pdo_sqlite, sockets, and sqlite3 will be enabled in /etc/php/php.ini"
-sudo echo "extension=pdo_sqlite" >> /etc/php/php.ini 
-sudo echo "extension=sockets" >> /etc/php/php.ini 
-sudo echo "extension=sqlite3" >> /etc/php/php.ini 
+echo "extension=pdo_sqlite" | sudo tee -a /etc/php/php.ini 
+echo "extension=sockets" | sudo tee -a /etc/php/php.ini 
+echo "extension=sqlite3" | sudo tee -a /etc/php/php.ini 
 echo "Extensions pdo_sqlite, sockets, and sqlite3 have be enabled in /etc/php/php.ini"
 echo "Review /etc/php/php.ini"
 echo "Restarting lighttpd service now ..."
