@@ -116,7 +116,7 @@ echo "Restarting lighttpd service now ..."
 sudo systemctl restart lighttpd.service
 
 echo "################################################################"
-echo "#########  Pi-Hole has been Configured                   #######"
+echo "#########  Pi-Hole has been Configured #########################"
 echo "#########  Open your borwser and go to http://localhost/ #######"
 echo "################################################################"
 
