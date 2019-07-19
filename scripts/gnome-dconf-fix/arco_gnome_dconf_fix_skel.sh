@@ -30,7 +30,7 @@
 #############################################################################################################################
 
 if [ ! -d "$HOME/backup" ]; then
-	mkdir $HOME/backup
+	#mkdir $HOME/backup
 	echo ""
 	echo "###############################################################################"
 	echo "~/backup folder does not exist. Exiting now!"
@@ -42,17 +42,6 @@ fi
 # Let's set some variables
 backup_dir=$HOME/backup
 archive_dir=$backup_dir/archive/
-
-# Let's define preferred dconf settings to be uploaded - ADD ANY ADDITIONAL SETTINGS FOLLOWING THE PATTERN BELOW
-#
-# Keyboard Map
-dconf_change_path1="/org/gnome/desktop/input-sources/"
-dconf_load_settings1=$backup_dir/load_dconf_settings1
-#
-# Do not hypernate ater 20 minutes
-dconf_change_path2="/org/gnome/settings-daemon/plugins/power/"
-dconf_load_settings2=$backup_dir/load_dconf_settings2
-#
 
 cd $backup_dir
 
@@ -72,9 +61,18 @@ echo ""
 ls -la $HOME/backup/backup*
 echo ""
 
+# Let's define preferred dconf settings to be uploaded - ADD ANY ADDITIONAL SETTINGS FOLLOWING THE PATTERN BELOW
+#
+# Keyboard Map
+dconf_change_path1="/org/gnome/desktop/input-sources/"
+dconf_load_settings1=$backup_dir/load_dconf_settings1
+#
+# Do not hypernate after 20 minutes
+dconf_change_path2="/org/gnome/settings-daemon/plugins/power/"
+dconf_load_settings2=$backup_dir/load_dconf_settings2
+#
 
 # Let's upload the peferred settings to /etc/skel/.config/dconf/user database
-
 echo -n "Would you like to load settings to dconf in /etc/skel? y/n "
 echo ""
 echo "**********************************************************************"
