@@ -101,7 +101,7 @@ if [ $answer = "y" ]; then
 else
 	echo ""
 	echo "###############################################################################"
-	echo "Existing script ... No further action required ... Doublcheck your $backup_dir"
+	echo "No further action required ... Doublcheck your $backup_dir"
 	echo "###############################################################################"
 	echo ""
 fi
@@ -138,7 +138,7 @@ if [ $answer = "y" ]; then
 else
 	echo ""
 	echo "###############################################################################"
-	echo "Existing script ... No further action required ... Doublcheck your $backup_dir"
+	echo "No further action required ... Doublcheck your $backup_dir"
 	echo "###############################################################################"
 	echo ""
 fi

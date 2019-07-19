@@ -43,7 +43,7 @@ fi
 backup_dir=$HOME/backup
 archive_dir=$backup_dir/archive/
 
-# Let's define preferred dconf settings to be uploaded
+# Let's define preferred dconf settings to be uploaded - ADD ANY ADDITIONAL SETTINGS FOLLOWING THE PATTERN BELOW
 #
 # Keyboard Map
 dconf_change_path1="/org/gnome/desktop/input-sources/"
@@ -108,7 +108,7 @@ if [ $answer = "y" ]; then
 else
 	echo ""
 	echo "###############################################################################"
-	echo "Existing script ... No further action required ... Doublcheck your $backup_dir"
+	echo "DONE! ... No further action required ... Doublcheck your $backup_dir"
 	echo "###############################################################################"
 	echo ""
 fi
