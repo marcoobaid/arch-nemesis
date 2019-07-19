@@ -1,0 +1,4 @@
+[/]
+power-button-action='interactive'
+sleep-inactive-ac-timeout=1200
+sleep-inactive-ac-type='nothing'
