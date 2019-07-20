@@ -25,8 +25,12 @@
 # 	dconf_load_settings1=$backup_dir/load_dconf_settings1
 ######################################################################################################################
 
-if [ ! -d "$HOME/backup" ]; then
-	mkdir $HOME/backup
+# Let's set some variables
+backup_dir=$HOME/backup
+archive_dir=$backup_dir/archive/
+
+if [ ! -d "$backup_dir" ]; then
+	#mkdir $HOME/backup
 	echo ""
 	echo "###############################################################################"
 	echo "~/backup folder does not exist. Exiting now!"
@@ -34,10 +38,6 @@ if [ ! -d "$HOME/backup" ]; then
 	echo""
 	exit 0
 fi
-
-# Let's set some variables
-backup_dir=$HOME/backup
-archive_dir=$backup_dir/archive/
 
 cd $backup_dir
 

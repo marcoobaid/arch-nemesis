@@ -29,7 +29,11 @@
 # If previous backups of dconf databases exist, the script will move the old ones into "archive" folder to keep things clean.
 #############################################################################################################################
 
-if [ ! -d "$HOME/backup" ]; then
+# Let's set some variables
+backup_dir=$HOME/backup
+archive_dir=$backup_dir/archive/
+
+if [ ! -d "$backup_dir" ]; then
 	#mkdir $HOME/backup
 	echo ""
 	echo "###############################################################################"
@@ -38,10 +42,6 @@ if [ ! -d "$HOME/backup" ]; then
 	echo""
 	exit 0
 fi
-
-# Let's set some variables
-backup_dir=$HOME/backup
-archive_dir=$backup_dir/archive/
 
 cd $backup_dir
 
