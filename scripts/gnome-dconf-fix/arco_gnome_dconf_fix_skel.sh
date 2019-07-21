@@ -13,15 +13,18 @@
 # When you run skel command after updates from Arcolinux, the default dconf database /etc/skel will overwrite the 
 # dconf database in your home folder (~/.config/dconf) and your default keyboard settings will revert to "Belgian".
 # This script can be integrated into the skel command so that your preferred settings will be upload to the dconf
-# database in /etc/skel before, it is copied to your home folder. This should alleviate any frustration of have to 
-# reconfigure your settings after running a skel command. The same script can be used to upload other prefences. You
-# will need to place the preferences for each path in dconf database in a seperate file and update the script.
+# database in /etc/skel before, it is copied to your home folder. This should alleviate any frustration of having to 
+# reconfigure your settings each time you run a skel command. The same script can be used to upload other preferences. You
+# will need to place the preferences for each dconf hive in a seperate file and update the script below. Refer to the script
+# below and follow how the keyboard settings as an example (dconf_change_path1 and dconf_load_settings1). You will need to use
+# dconf editor to identify the path and the syntax for your preferred changes.
 #
+# 
 # How to use the script
 # #####################
 # Make sure the script has "execute" permissions and run it. The script will create a "~/backup" folder to store backups
 # of the original dconf database before it uploads any settings. You can always restore the original database (copy/paste).
-# The script expects the preferred settings to be in the backup folder. There are two settings that this script will
+# The script expects the preferred settings files to be in the backup folder. There are two settings that this script will
 # change by default. 1) It will make gnome keyboard mapping "US" (you can change it to your liking) 2) it will implement
 # a Power setting to prevent the system from hypernating after 20 minutes of idle time. This setting is turned on by default
 # and causes the VirtualBox VM to freeze.
