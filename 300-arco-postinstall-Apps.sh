@@ -16,14 +16,14 @@ echo "################################################################"
 
 ### Fun stuff
 sudo pacman -S asciiquarium --noconfirm --needed
-sudo pacman -S cmatrix --noconfirm --needed
 sudo pacman -S cool-retro-term --noconfirm --needed
 sudo pacman -S cowfortune --noconfirm --needed
 sudo pacman -S figlet --noconfirm --needed
 sudo pacman -S lolcat --noconfirm --needed
-sudo pacman -S boxes --noconfirm --needed
+###sudo pacman -S boxes --noconfirm --needed
 sh scripts/install-edex-ui-v*.sh
 sh scripts/install-hack-font-v*.sh
+sh scripts/install-nerdfonts-v*.sh
 
 ### Graphics
 sudo pacman -S blender --noconfirm --needed
@@ -37,11 +37,13 @@ sudo pacman -S ufetch-arco-git --noconfirm --needed
 sudo pacman -S youtube-dl --noconfirm --needed
 sudo pacman -S gtop --noconfirm --needed
 sh scripts/install-vtop-v*.sh
+sh scripts/install-tmatrix-v*.sh
+sh scripts/install-cmatrix-v*.sh
 sh scripts/install-tty-clock-v*.sh
 sh scripts/install-curseradio-v*.sh
 sh scripts/install-nemo-v*.sh
 sh scripts/install-caffeine-ng-v*.sh
-sh scripts/install-polybar-v*.sh
+###sh scripts/install-polybar-v*.sh
 sh scripts/install-woeusb-v*.sh
 
 ### System
@@ -50,11 +52,11 @@ sudo pacman -S expac --noconfirm --needed
 sudo pacman -S linux-headers --noconfirm --needed
 
 ### Virtualbox
-sh scripts/install-virtualbox-host-v*.sh
+#sh scripts/install-virtualbox-host-v*.sh
 #sudo pacman -S virtualbox-guest-modules-arch --noconfirm --needed
 
 ### QEMU/KVM
-sh scripts/install-qemu-v*.sh
+###sh scripts/install-qemu-v*.sh
 
 ### VMWare Workstation
 #sh scripts/install-vmware-workstation-v*.sh

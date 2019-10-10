@@ -9,7 +9,7 @@ set -e
 #
 ##################################################################################################################
 
-sudo pacman -S hblock-git --noconfirm --needed
+sudo pacman -S arcolinux-hblock-git --noconfirm --needed
 
 echo "################################################################"
 echo "####       Configuring hblock now .... Please Wait        ######"
