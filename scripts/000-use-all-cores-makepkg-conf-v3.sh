@@ -13,7 +13,7 @@ set -e
 #
 ##################################################################################################################
 
-numberofcores=$(grep -c ^processor /proc/cpuinfo)
+numberofcores=16
 
 
 case $numberofcores in

@@ -20,8 +20,9 @@ sudo pacman -S cool-retro-term --noconfirm --needed
 sudo pacman -S cowfortune --noconfirm --needed
 sudo pacman -S figlet --noconfirm --needed
 sudo pacman -S lolcat --noconfirm --needed
+
 ###sudo pacman -S boxes --noconfirm --needed
-sh scripts/install-edex-ui-v*.sh
+###sh scripts/install-edex-ui-v*.sh
 sh scripts/install-hack-font-v*.sh
 sh scripts/install-nerdfonts-v*.sh
 
@@ -35,8 +36,8 @@ sudo pacman -S ranger --noconfirm --needed
 sudo pacman -S sl --noconfirm --needed
 sudo pacman -S ufetch-arco-git --noconfirm --needed
 sudo pacman -S youtube-dl --noconfirm --needed
-sudo pacman -S gtop --noconfirm --needed
-sh scripts/install-vtop-v*.sh
+sudo pacman -S leafpad --noconfirm --needed
+sh scripts/install-gotop-v*.sh
 sh scripts/install-tmatrix-v*.sh
 sh scripts/install-cmatrix-v*.sh
 sh scripts/install-tty-clock-v*.sh
@@ -52,14 +53,17 @@ sudo pacman -S expac --noconfirm --needed
 sudo pacman -S linux-headers --noconfirm --needed
 
 ### Virtualbox
-#sh scripts/install-virtualbox-host-v*.sh
+sh scripts/install-virtualbox-host-v*.sh
 #sudo pacman -S virtualbox-guest-modules-arch --noconfirm --needed
 
 ### QEMU/KVM
 ###sh scripts/install-qemu-v*.sh
 
 ### VMWare Workstation
-#sh scripts/install-vmware-workstation-v*.sh
+sh scripts/install-vmware-workstation-v*.sh
+sudo systemctl enable --now vmware-networks.service
+sudo systemctl enable --now vmware-usbarbitrator.service
+sudo systemctl enable --now vmware-hostd.service
 #sudo pacman -S open-vm-tools --noconfirm --needed
 #sudo systemctl enable vmtoolsd
 #sudo systemctl start vmtoolsd
