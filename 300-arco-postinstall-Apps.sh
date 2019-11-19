@@ -37,6 +37,8 @@ sudo pacman -S sl --noconfirm --needed
 sudo pacman -S ufetch-arco-git --noconfirm --needed
 sudo pacman -S youtube-dl --noconfirm --needed
 sudo pacman -S leafpad --noconfirm --needed
+sudo pacman -S remmina --noconfirm --needed
+sudo pacman -S freerdp --noconfirm --needed
 sh scripts/install-gotop-v*.sh
 sh scripts/install-tmatrix-v*.sh
 sh scripts/install-cmatrix-v*.sh
