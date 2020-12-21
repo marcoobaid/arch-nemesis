@@ -12,7 +12,7 @@ set -e
 
 echo "##### Cloning Github Repos #####"
 if [ ! -d "$HOME/DATA" ]; then
-	mkdir $HOME/DATA  
+	mkdir $HOME/DATA
 fi
 cd $HOME/DATA
 git clone https://github.com/marcoobaid/dotfiles
